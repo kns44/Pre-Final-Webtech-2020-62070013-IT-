@@ -2,7 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อที่ 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>ข้อที่ 1 62070013</title>
 </head>
 <body>
     <?php
@@ -12,12 +16,14 @@
       echo "<div class='container'>";
       echo "<div class='row'>";
       foreach($result->tracks->items as $data){
-        echo "<div class='col-4'>";
-        echo "</div>"
+        echo "<div class='col-4'><div class='card'>";
+        
+        echo "<p><b>".$data->album->name."</b></p>";
         echo "<p>".$data->album->name."</p>";
+        echo "</div></div>";
       }
-      echo "</div>"
-      echo "</div>"
+      echo "</div>";
+      echo "</div>";
     ?>
 </body>
 </html>
