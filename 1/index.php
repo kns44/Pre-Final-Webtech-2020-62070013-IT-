@@ -21,7 +21,7 @@
         echo "<p><b>".$data->album->name."</b></p>";
         echo "<p>Artist </p>";
         echo "<p>Release data " .$data->album->release_date."</p>";
-        echo "<p>Avaliable""</p>";
+        echo "<p>Avaliable</p>";
         echo "</div></div>";
       }
       echo "</div>";
@@ -29,3 +29,4 @@
     ?>
 </body>
 </html>
+
