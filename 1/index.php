@@ -17,9 +17,11 @@
       echo "<div class='row'>";
       foreach($result->tracks->items as $data){
         echo "<div class='col-4'><div class='card'>";
-        
+        echo "<img src='".$data->album->images[0]->url."' width='100%'>";
         echo "<p><b>".$data->album->name."</b></p>";
-        echo "<p>".$data->album->name."</p>";
+        echo "<p>Artist </p>";
+        echo "<p>Release data " .$data->album->release_date."</p>";
+        echo "<p>Avaliable""</p>";
         echo "</div></div>";
       }
       echo "</div>";
